@@ -81,3 +81,5 @@ You do NOT need to retrain anything.
 
 - Mean pooling provides a deterministic way to convert variable-length token embeddings into a single vector, however if you want to do something more interesting with the embeddings, you are more than welcome to.
 
+- Embedding shards are not included in this repository due to size. I will send them separately for you to place under embeddings/no_boltz/
+
