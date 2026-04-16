@@ -206,7 +206,7 @@ class PlainESMEmbedder:
         TCR vector  = average of alpha and beta embeddings
         Final vector = [TCR | peptide | HLA]
 
-        This gives the student one fixed vector per pair.
+        This gives the fixed vector per pair.
         """
         a = self.embed_sequence(tcra)
         b = self.embed_sequence(tcrb)
@@ -359,7 +359,7 @@ def extract_finetuned_split(shard_dir, out_npz):
 
 # ============================================================
 # OPTIONAL LOAD EXAMPLE
-# I include this so the student can see how to load the output.
+# I include this so you can see how to load the output.
 # ============================================================
 
 def show_example_load(npz_path):
@@ -422,7 +422,6 @@ def main():
     show_example_load(ft_train_out)
 
     print("\nDone.")
-    print("The student can now load these .npz files and build their own classifier.")
 
 
 if __name__ == "__main__":
